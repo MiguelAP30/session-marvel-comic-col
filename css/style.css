@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+}
+body{
+    background-color: rgb(126, 36, 0);
+}
+.container{
+    & .header{
+        padding: 10px 0px;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+        
+    }
+    & .content{
+        & .btn-show-list{
+            background-color: rgb(255, 255, 0);
+            color: rgb(10, 108, 194);
+            &:hover{
+                transform: scale(1.05);
+                opacity: 1;
+                color: rgb(255, 0, 0);
+                background-color: aqua;
+            }
+        }
+        & .tituloPrincipal{
+            color: rgb(255, 0, 0);
+        }
+        & .content-titulos-marvel{
+            margin: 20px;
+            padding: 10px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 10px;
+            border: 1px solid rebeccapurple;
+            & .titulos{
+                display: flex;
+                opacity: 0.8;
+                background-color: rgb(20, 3, 72);
+                border-radius: 10px;
+                flex-direction: column;
+                
+                & .cartelera-marvel{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    margin: 20px;
+                    padding-left: 5px;
+                    background-color: rgb(0, 170, 255);
+                    border-radius: 10px;
+                    &:hover{
+                        transform: scale(1.03);
+                        opacity: 1;
+                        color: rgb(205, 3, 255);
+                        background-color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
