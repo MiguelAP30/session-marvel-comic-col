@@ -18,14 +18,24 @@ fetch(url)
         MarvelContainer.appendChild(fila1);
         apiInformation.forEach((resultado)=>{
             const fila = document.createElement("tr");
-            const casillaTitulo = document.createElement("td");
-            casillaNombre.textContent= resultado.title;
+
+            const casillaTitulo= document.createElement("td")
+            casillaTitulo.textContent= resultado.title
 
             const casillaAutor = document.createElement("td");
-            casillaAutor.textContent= resultado.creators.items[0].name;
+            let autores= ""
+            for (i=0; i<resultado.creators.items.length; i++){
+                autores+= resultado.creators.items[i].name+"\n" ;
+            }
+            casillaAutor.textContent= autores;
 
             const casillaStories = document.createElement("td");
-            casillaStories.textContent= resultado.stories.items[0].name;
+            let stories= ""
+            for (i=0; i<resultado.stories.items.length; i++){
+                stories+= resultado.stories.items[i].name+"\n" ;
+            }
+
+            casillaStories.textContent= stories;
 
             fila.appendChild(casillaTitulo);
             fila.appendChild(casillaAutor);
@@ -35,4 +45,3 @@ fetch(url)
         console.log("202");
     })
     .catch((error)=> console.log("Error 404"));
-
