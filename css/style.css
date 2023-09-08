@@ -16,6 +16,7 @@ body{
     }
     & .content{
         & .content-titulos-marvel{
+
             color: rgb(10, 108, 194);
             & .tabla{
                 width: 80%;
