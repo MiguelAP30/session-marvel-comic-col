@@ -34,7 +34,7 @@ body{
             background-color: rgb(0, 0, 0);
             border-radius: 10px;
             border: 1px solid rebeccapurple;
-            & .titulos{
+            & .tabla{
                 display: flex;
                 opacity: 0.8;
                 background-color: rgb(20, 3, 72);
