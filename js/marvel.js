@@ -20,7 +20,8 @@ fetch(url)
             MarvelContainer.appendChild(CarteleraContainer);
         })
         MarvelContainer.appendChild(tableMarvel)
+        console.log("202");
     })
-    .catch((error)=> console.log(error));
+    .catch((error)=> console.log("Error 404"));
 
 
