@@ -1,4 +1,4 @@
-const url = "https://gateway.marvel.com/v1/public/series?ts=1&apikey=23f6f9ee394ee575f1f160012f5064b8&hash=3ee57ae9fd9f8053a3a6909d5a64f5b5"
+/* const url = "https://gateway.marvel.com/v1/public/series?ts=1&apikey=23f6f9ee394ee575f1f160012f5064b8&hash=3ee57ae9fd9f8053a3a6909d5a64f5b5"
 fetch(url)
     .then((response)=>response.json())
     .then((valor)=>{
@@ -20,6 +20,5 @@ fetch(url)
         })
         console.log("202");
     })
-    .catch((error)=> console.log("Error 404"));
-
+    .catch((error)=> console.log("Error 404")); */
 
