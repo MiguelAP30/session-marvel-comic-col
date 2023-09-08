@@ -3,23 +3,21 @@ fetch(url)
     .then((response)=>response.json())
     .then((valor)=>{
         const apiInformation= valor.data.results;
-        const MarvelContainer = document.querySelector(".nombre");
+        const MarvelContainer = document.querySelector(".tabla");
         MarvelContainer.innerHTML="";
-        const tableMarvel= document.createElement("table")
         tableMarvel.classList.add("table-information")
         apiInformation.forEach((resultado)=>{
-            const MarvelTitulo = document.createElement("p");
+            const MarvelTitulo = document.createElement("tr");
             MarvelTitulo.textContent= "cartelera.title";
-            const CarteleraContainer = document.createElement("div");
-            CarteleraContainer.classList.add("cartelera-marvel");
+            const casillaNombre1 = document.createElement("td");
+            casillaNombre1.classList.add("cartelera-marvel");
             const MarvelUrl = document.createElement("p");
             MarvelUrl.textContent= "cartelera.urls[0].url";
 
-            CarteleraContainer.appendChild(MarvelTitulo);
-            CarteleraContainer.appendChild(MarvelUrl);
-            MarvelContainer.appendChild(CarteleraContainer);
+            casillaNombre1.appendChild(MarvelTitulo);
+            casillaNombre1.appendChild(MarvelUrl);
+            MarvelContainer.appendChild(casillaNombre1);
         })
-        MarvelContainer.appendChild(tableMarvel)
         console.log("202");
     })
     .catch((error)=> console.log("Error 404"));
